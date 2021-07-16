@@ -5,9 +5,99 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-.container{
+.container_header {
+  width: 1200px;
+  height: 800px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  row-gap: 6px;
+  column-gap: 8px;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 102px;
+}
+.titre_logo {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.navbar {
+  grid-column: 3 / 8;
+  z-index: 1;
+}
+.navbar a{
+  color: rgba(0, 0, 0, 75%);
+  font-weight: 300;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+.btn {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 9px 35px;
+  text-transform: uppercase;
+}
+
+.aside {
+  grid-row: 2/6;
+  grid-column: 1 / 5;
+  margin-top: 107px;
+  margin-left: 102px;
+}
+.aside h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #3e3f43;
+}
+.aside h1 {
+  font-size: 77px;
+  font-weight: 700;
+  color: #313235;
+}
+span{
+  font-weight: bold;
+}
+.cta {
+  position: absolute;
+  top: 544px;
+  left: 108px;
+  background-color: #DAA520;
+  padding: 14px 30px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+  border-radius: 5px;
+  
+}
+.design_table {
+  grid-row: 2/7;
+  grid-column: 4 / 7;
+  z-index: 2;
+  padding-left: 93px;
+  padding-top: 55px;
+}
+.rose {
+  position: absolute;
+  top: 367px;
+  left: 541px;
+}
+.rideau{
+  position: absolute;
+  top:0;
+  left: 809px;
+  width: 471px;
+  height: 800px;
+  background-color: #F9BDBD;
+  border-radius: 0 30px 0 101px
 }
